@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+
+  --font-xl: "Schooled";
+  --font-default: ["Inter", "system-ui", "Avenir", "Helvetica", "Arial", "sans-serif"];
+  --font-sm: "Script";
+  --font-md: "Haniya";
+  --font-lg: "Fancy";
+
+  --gradient-20: rgb(106, 90, 205);
+  --gradient-40: rgba(161, 26, 115, 1);
+  --gradient-60: rgba(161, 135, 217, 1);
+  --gradient-80: rgba(161, 26, 217, 1);
+  --gradient-100: rgba(161, 26, 115, 1);
+
+
+  --currentColor: currentColor;
+
+  --black: #303030;
+  --white: #fefefe;
+
+  --primary: rgba(255, 0, 60, 1);
+  --secondary: rgb(60, 0, 255);
+  --danger: rgb(255, 0, 0);
+  --success: rgb(60, 179, 113);
+  --warning: rgb(255, 165, 0);
+  --info: rgb(106, 90, 205);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: rgba(255, 60, 0, 0);
+  text-decoration: inherit;
+}
+a:hover {
+  color: rgba(255, 60, 0, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 2.8em;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.4em;
+  line-height: 1;
+}
+
+h4 {
+  font-size: 2em;
+  line-height: 0.8;
+}
+
+p, a, small, li, pre, button {
+  font-size: 1em;
+  line-height: 0.6;
+  font-family: var(--font-default);
+}
+
+
+input {
+  border-radius: 8px;
+  border: 0px solid #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+input:hover {
+  border: 0px solid #646cff;
+}
+input:focus,
+input:focus-visible {
+  outline: 0px auto -webkit-focus-ring-color;
+  border: 0px solid #646cff;
+}
+
+button {
+  border-radius: 8px;
+  border: 0px solid #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border: 0px solid #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 0px auto -webkit-focus-ring-color;
+  border: 0px solid #646cff;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo#doonline:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.bg-gradient {
+  background: radial-gradient(ellipse at 100% 100%, hsl(254 100% 6% / 0.07), var(--gradient-60), transparent), linear-gradient(to bottom right, var(--gradient-20), var(--gradient-40), var(--gradient-80), var(--gradient-100));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    @apply bg-stone-950 text-stone-50;
+  }
+  a:hover {
+    color: rgb(255, 60, 0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-stone-950 text-stone-50;
+  }
+  a:hover {
+    color: rgb(255, 60, 0);
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "es2017",
+    "composite": true,
+    "skipLibCheck": false,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "@types/react-router-dom",
+      "@types/react-dom",
+      "@types/react",
+      "@types/node"
+    ]
+  },
+  "exclude": [
+    "public/**/*.*",
+    "lib/**/*.*",
+    "api/**/*.*"
+  ],
+  "include": [
+    "src/**/*.*",
+    "vite.config.ts",
+    "mongodb.config.ts"
+  ]
+}

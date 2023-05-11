@@ -1,0 +1,39 @@
+{
+  "name": "chatgpt-react-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.0",
+    "simple-icons": "^8.12.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.0.11",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/typescript": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.2"
+  }
+}
